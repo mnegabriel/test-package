@@ -3663,6 +3663,7 @@ module.exports = function (key) {
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
+__webpack_require__.d(__webpack_exports__, "components", function() { return /* reexport */ components; });
 __webpack_require__.d(__webpack_exports__, "install", function() { return /* reexport */ install; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
@@ -3978,7 +3979,9 @@ function install(Vue) {
     Vue.component(name, comp);
   });
 }
-/* harmony default export */ var src_components = (components);
+/* harmony default export */ var src_components = ({
+  install: install
+}); // export default components
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
