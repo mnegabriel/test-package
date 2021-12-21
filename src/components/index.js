@@ -1,6 +1,6 @@
 import InputButton from './InputButton.vue'
 
-const components = {
+export const components = {
     InputButton
 }
 
@@ -13,4 +13,8 @@ export function install(Vue) {
     })
 }
 
-export default components
+export default {
+    install
+}
+
+// export default components
