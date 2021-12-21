@@ -1,14 +1,16 @@
 import InputButton from './InputButton.vue'
 
-export const components = {
+const components = {
     InputButton
 }
 
-export function install(Vue) {
+function install(Vue) {
     if (install.installed) return;
     install.installed = true;
 
     Object.entries(components).forEach(([name, comp]) => {
+        console.log(name)
+        console.log(comp)
         Vue.component(name, comp);
     })
 }

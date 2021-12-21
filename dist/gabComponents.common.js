@@ -3653,10 +3653,6 @@ module.exports = function (key) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "components", function() { return /* reexport */ components; });
-__webpack_require__.d(__webpack_exports__, "install", function() { return /* reexport */ install; });
-
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
 
@@ -3959,6 +3955,7 @@ var component = normalizeComponent(
 var components = {
   InputButton: InputButton
 };
+
 function install(Vue) {
   if (install.installed) return;
   install.installed = true;
@@ -3967,9 +3964,12 @@ function install(Vue) {
         name = _ref2[0],
         comp = _ref2[1];
 
+    console.log(name);
+    console.log(comp);
     Vue.component(name, comp);
   });
 }
+
 /* harmony default export */ var src_components = ({
   install: install
 }); // export default components
