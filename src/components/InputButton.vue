@@ -2,6 +2,7 @@
   <article>
     <input type="text" ref="input" @keypress.enter="handleAction"/>
     <button @click="handleAction">click</button>
+    <BButton @click="handleAction">click</BButton>
   </article>
 </template>
 
@@ -16,6 +17,8 @@ export default {
       console.log("from component: " + value);
 
       this.$emit("action", value);
+
+      this.$refs.input.value = ''
     },
   },
 };

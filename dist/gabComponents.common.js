@@ -3799,14 +3799,15 @@ var web_dom_collections_for_each = __webpack_require__("159b");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.entries.js
 var es_object_entries = __webpack_require__("4fad");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"18489196-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/InputButton.vue?vue&type=template&id=4de986b1&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',[_c('input',{ref:"input",attrs:{"type":"text"},on:{"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.handleAction.apply(null, arguments)}}}),_c('button',{on:{"click":_vm.handleAction}},[_vm._v("click")])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47cb05be-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/InputButton.vue?vue&type=template&id=52070bdb&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',[_c('input',{ref:"input",attrs:{"type":"text"},on:{"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.handleAction.apply(null, arguments)}}}),_c('button',{on:{"click":_vm.handleAction}},[_vm._v("click")]),_c('BButton',{on:{"click":_vm.handleAction}},[_vm._v("click")])],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/InputButton.vue?vue&type=template&id=4de986b1&
+// CONCATENATED MODULE: ./src/components/InputButton.vue?vue&type=template&id=52070bdb&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/InputButton.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -3821,6 +3822,7 @@ var staticRenderFns = []
       var value = this.$refs.input.value;
       console.log("from component: " + value);
       this.$emit("action", value);
+      this.$refs.input.value = '';
     }
   }
 });
@@ -3964,15 +3966,13 @@ function install(Vue) {
         name = _ref2[0],
         comp = _ref2[1];
 
-    console.log(name);
-    console.log(comp);
     Vue.component(name, comp);
   });
 }
 
 /* harmony default export */ var src_components = ({
   install: install
-}); // export default components
+});
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 

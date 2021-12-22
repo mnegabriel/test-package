@@ -9,8 +9,6 @@ function install(Vue) {
     install.installed = true;
 
     Object.entries(components).forEach(([name, comp]) => {
-        console.log(name)
-        console.log(comp)
         Vue.component(name, comp);
     })
 }
@@ -18,5 +16,3 @@ function install(Vue) {
 export default {
     install
 }
-
-// export default components
