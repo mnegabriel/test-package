@@ -1,6 +1,6 @@
 {
   "name": "test-package",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "main": "./dist/gabComponents.common.js",
   "module": "./dist/gabComponents.umd.js",
