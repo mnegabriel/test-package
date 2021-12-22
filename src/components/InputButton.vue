@@ -2,7 +2,7 @@
   <article>
     <input type="text" ref="input" @keypress.enter="handleAction"/>
     <button @click="handleAction">click</button>
-    <BButton @click="handleAction">click</BButton>
+    <BButton @click="handleAction" variant="primary">click</BButton>
   </article>
 </template>
 
